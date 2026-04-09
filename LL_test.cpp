@@ -1,12 +1,13 @@
 #include <iostream>
-using namespace std;
-#include "student.h"
-#include "LL.h"
 #include <cstdlib>
+#include <string>
+#include "LL.h"
+#include "student.h"
+using namespace std;
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[])
+{
     LL A;
-
     // argv: id1 gpa1 name1  id2 gpa2 name2 ...
     for(int i = 1; i + 2 < argc; i += 3){
         long   id  = atol(argv[i]);
@@ -23,4 +24,3 @@ int main(int argc, char *argv[]){
 
     return 0;
 }
-
